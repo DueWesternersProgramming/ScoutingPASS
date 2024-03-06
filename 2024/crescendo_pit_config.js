@@ -69,11 +69,25 @@ var config_data = `
       "code": "fpu",
       "type": "bool"
     },
+    { "name": "Hang Robot",
+    "code": "hang",
+    "type": "bool"
+    },
+    { "name": "Scoring Locations",
+    "code": "loc",
+    "type": "text",
+    "size": 20,
+    "maxSize": 250
+    },
     { "name": "Autos",
       "code": "aut",
       "type": "text",
       "size": 20,
       "maxSize": 250
+    },
+    { "name": "Human Player Spotlight",
+    "code": "hps",
+    "type": "bool"
     },
     { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
       "code": "sct",
