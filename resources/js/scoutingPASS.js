@@ -857,7 +857,7 @@ function getData(dataFormat) {
 }
 
 function updateQRHeader() {
-  let str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT! Team: !TEAM!     Make sure to Screenshot or scan this code!';
+  let str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT! Team: !TEAM! Make sure to Screenshot or scan this code!';
 
   if (!pitScouting) {
     str = str
@@ -866,7 +866,7 @@ function updateQRHeader() {
       .replace('!ROBOT!', document.getElementById("display_r").value)
       .replace('!TEAM!', document.getElementById("input_t").value);
   } else {
-    str = 'Pit Scouting - Team !TEAM!'
+    str = 'Pit Scouting - Team !TEAM! Make sure to Screenshot or scan this code!'
       .replace('!TEAM!', document.getElementById("input_t").value);
   }
 
