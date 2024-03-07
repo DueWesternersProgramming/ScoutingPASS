@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "scand",
+      "defaultValue": "2024scand",
       "required": "true"
     },
     { "name": "Match Level",
