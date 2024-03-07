@@ -857,7 +857,7 @@ function getData(dataFormat) {
 }
 
 function updateQRHeader() {
-  let str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT! Team: !TEAM!\nMake sure to Screenshot or scan this code!';
+  let str = 'Event: !EVENT! Match: !MATCH! Robot: !ROBOT! Team: !TEAM!\\nMake sure to Screenshot or scan this code!';
 
   if (!pitScouting) {
     str = str
