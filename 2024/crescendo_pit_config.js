@@ -89,7 +89,7 @@ var config_data = `
     "code": "hps",
     "type": "bool"
     },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
+    { "name": "Scoring Method",
       "code": "sct",
       "type": "text",
       "size": 20,
