@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024scand",
+      "defaultValue": "2024sccha",
       "required": "true"
     },
     { "name": "Match Level",
