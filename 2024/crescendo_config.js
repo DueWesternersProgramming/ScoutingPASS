@@ -162,6 +162,15 @@ var config_data = `
       },
       "defaultValue":"3"
     },
+    { "name": "Test Boxes",
+      "code": "test",
+      "type": "bool",
+      "choices": {
+        "1": "EA",
+        "2": "EE"
+      },
+      "defaultValue":"1"
+    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
