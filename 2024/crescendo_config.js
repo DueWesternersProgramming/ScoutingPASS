@@ -166,8 +166,9 @@ var config_data = `
       "code": "test",
       "type": "bool",
       "choices": {
-        "1": "EA",
-        "2": "EE"
+        "1": "EA<br>",
+        "2": "EE<br>",
+        "3": "EO"
       },
       "defaultValue":"1"
     },
