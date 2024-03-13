@@ -129,7 +129,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Did This Team Do Spotlighting?",
+    { "name": "This Team<br>Do Spotlighting?",
       "code": "spo",
       "type": "bool"
     },
