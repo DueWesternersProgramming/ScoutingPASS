@@ -65,6 +65,10 @@ var config_data = `
     }
   ],
   "auton": [
+    { "name": "Attempted Auto",
+      "code": "att",
+      "type": "bool"
+    },
     { "name": "Leave Starting Zone",
       "code": "al",
       "type": "bool"
@@ -85,6 +89,10 @@ var config_data = `
     },
     { "name": "Speaker Scores",
       "code": "tss",
+      "type": "counter"
+    },
+    { "name": "Missed Shots",
+      "code": "tms",
       "type": "counter"
     },
     { "name": "Times Amplified",
@@ -120,6 +128,14 @@ var config_data = `
         "x": "Not attempted"
       },
       "defaultValue": "x"
+    },
+    { "name": "Did This Team Do Spotlighting?",
+      "code": "spo",
+      "type": "bool"
+    },
+    { "name": "If So, How Many<br>Successful Shots?",
+      "code": "hum",
+      "type": "counter"
     },
     { "name": "Note in Trap",
       "code": "nit",
@@ -162,15 +178,9 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Test Boxes",
-      "code": "test",
-      "type": "bool",
-      "choices": {
-        "1": "EA<br>",
-        "2": "EE<br>",
-        "3": "EO"
-      },
-      "defaultValue":"1"
+    { "name": "Shot<br>(from > angles)",
+      "code": "sho",
+      "type": "bool"
     },
     { "name": "Died/Immobilized",
       "code": "die",
@@ -178,10 +188,6 @@ var config_data = `
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",

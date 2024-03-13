@@ -61,6 +61,12 @@ var config_data = `
       },
       "defaultValue":"x"
     },
+    { "name": "Other Motor",
+      "code": "mot",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
+    },
     { "name": "# of Batteries",
       "code": "nob",
       "type": "number"
@@ -70,14 +76,28 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Hang Robot",
-    "code": "hang",
-    "type": "bool"
+      "code": "hang",
+      "type": "bool"
     },
-    { "name": "Scoring Locations",
-    "code": "loc",
-    "type": "text",
-    "size": 20,
-    "maxSize": 250
+    { "name": "Speaker Shooter?",
+      "code": "spea",
+      "type": "bool"
+    },
+    { "name": "Amp Shooter?",
+      "code": "amps",
+      "type": "bool"
+    },
+    { "name": "Feeder?",
+      "code": "feed",
+      "type": "bool"
+    },
+    { "name": "Defense only?",
+      "code": "defo",
+      "type": "bool"
+    },
+    { "name": "Trap?",
+      "code": "trap",
+      "type": "bool"
     },
     { "name": "Autos",
       "code": "aut",
@@ -86,14 +106,8 @@ var config_data = `
       "maxSize": 250
     },
     { "name": "Human Player Spotlight",
-    "code": "hps",
-    "type": "bool"
-    },
-    { "name": "Scoring Method",
-      "code": "sct",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
+      "code": "hps",
+      "type": "bool"
     },
     { "name": "Comments",
       "code": "co",
