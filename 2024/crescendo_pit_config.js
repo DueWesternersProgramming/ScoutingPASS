@@ -62,7 +62,7 @@ var config_data = `
       "defaultValue":"x"
     },
     { "name": "Other Motor",
-      "code": "mot",
+      "code": "omo",
       "type": "text",
       "size": 20,
       "maxSize": 250
