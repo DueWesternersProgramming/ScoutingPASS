@@ -80,6 +80,12 @@ var config_data = `
     { "name": "Speaker Scores",
       "code": "ass",
       "type": "counter"
+    },
+    { "name": "Comments",
+    "code": "ca",
+    "type": "text",
+    "size": 15,
+    "maxSize": 55
     }
   ],
   "teleop": [

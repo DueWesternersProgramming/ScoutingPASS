@@ -5,6 +5,19 @@ var config_data = `
   "page_title": "Crescendo",
   "pitConfig": "true",
   "prematch": [
+    { "name": "Scouter Initials",
+    "code": "s",
+    "type": "scouter",
+    "size": 5,
+    "maxSize": 5,
+    "required": "true"
+    },
+    { "name": "Pit Row",
+    "code": "pr",
+    "type": "text",
+    "size": 15,
+    "maxSize": 15
+    },
     { "name": "Team Number",
       "code": "t",
       "type": "number"
