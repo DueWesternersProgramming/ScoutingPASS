@@ -74,11 +74,16 @@
 					<table id="qr-table"><tr><td width="5%">&nbsp;</td><td width="90%">
 						<div id="qrcode" style="text-align:center">
 							<script>
-						// Create QRCode Object
-								qr = new QRCode(document.getElementById("qrcode"), options)
-					</script>
-					</div>
-				</td><td width="5%">&nbsp;</td></tr>
+							// Create QRCode Object
+							var options = {
+								backgroundImage: '/resources/images/logo.png',
+								backgroundImageAlpha: 0.3,
+								autoColor: false,
+							}
+							qr = new QRCode(document.getElementById("qrcode"), options)
+							</script>
+						</div>
+					</td><td width="5%">&nbsp;</td></tr>
 				<tr><td width="5%">&nbsp;</td><td width="90%">
 					<div>
 						<p id="data" style="text-align:center"></p>
