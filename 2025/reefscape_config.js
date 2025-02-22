@@ -5,6 +5,30 @@ var config_data = `
   "page_title": "REEFSCAPE",
   "checkboxAs": "10",
   "prematch": [
+    { "name": "Scouter Initials",
+      "code": "s",
+      "type": "scouter",
+      "size": 5,
+      "maxSize": 5,
+      "required": "true"
+    },
+    { "name": "Event",
+      "code": "e",
+      "type": "event",
+      "defaultValue": "2025ilpe",
+      "required": "true"
+    },
+    { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
+      "required": "true"
+    },
     { "name": "Match #",
       "code": "m",
       "type": "match",
@@ -12,7 +36,7 @@ var config_data = `
       "max": 150,
       "required": "true"
     },
-    { "name": "Position",
+    { "name": "Robot",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -119,19 +143,13 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Scored in<br>Opponent<br>Processor",
-      "code": "opp",
-      "type": "bool"
-    },
-    { "name": "Dropped Coral",
+    { "name": "Dropped Coral (>2)",
       "code": "dc",
-      "type": "number",
-      "min": 0
+      "type": "counter"
     },
-    { "name": "Dropped Algae",
+    { "name": "Dropped Algae (>2)",
       "code": "da",
-      "type": "number",
-      "min" : 0
+      "type": "counter"
     }
   ],
 
@@ -141,10 +159,6 @@ var config_data = `
 
 
   "endgame": [
-    { "name": "Barge Timer",
-      "code": "ebt",
-      "type": "timer"
-    },
     { "name": "Final Robot Status",
       "code": "efs",
       "type":"radio",
@@ -165,6 +179,10 @@ var config_data = `
 
 
   "postmatch": [
+    { "name": "Attained Coopertition Pt",
+      "code": "cop",
+      "type": "bool"
+    },
     { "name": "Algae Left in Reef",
       "code": "alr",
       "type": "number",
