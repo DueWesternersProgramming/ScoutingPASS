@@ -5,30 +5,6 @@ var config_data = `
   "page_title": "REEFSCAPE",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
-      "code": "s",
-      "type": "scouter",
-      "size": 5,
-      "maxSize": 5,
-      "required": "true"
-    },
-    { "name": "Event",
-      "code": "e",
-      "type": "event",
-      "defaultValue": "2025ilpe",
-      "required": "true"
-    },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
-      "defaultValue": "qm",
-      "required": "true"
-    },
     { "name": "Match #",
       "code": "m",
       "type": "match",
@@ -36,7 +12,7 @@ var config_data = `
       "max": 150,
       "required": "true"
     },
-    { "name": "Robot",
+    { "name": "Position",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -64,6 +40,12 @@ var config_data = `
       "shape": "circle 5 black red true"
     }
   ],
+
+
+
+
+
+
   "auton": [
     { "name": "Leave Starting Line",
       "code": "al",
@@ -94,6 +76,13 @@ var config_data = `
       "type": "counter"
     }
   ],
+
+
+
+
+
+
+
   "teleop": [
     { "name": "Coral L1",
       "code": "tc1",
@@ -133,8 +122,24 @@ var config_data = `
     { "name": "Scored in<br>Opponent<br>Processor",
       "code": "opp",
       "type": "bool"
+    },
+    { "name": "Dropped Coral",
+      "code": "dc",
+      "type": "number",
+      "min": 0
+    },
+    { "name": "Dropped Algae",
+      "code": "da",
+      "type": "number",
+      "min" : 0
     }
   ],
+
+
+
+
+
+
   "endgame": [
     { "name": "Barge Timer",
       "code": "ebt",
@@ -153,11 +158,13 @@ var config_data = `
       "defaultValue": "x"
     }
   ],
+
+
+
+
+
+
   "postmatch": [
-    { "name": "Attained Coopertition Pt",
-      "code": "cop",
-      "type": "bool"
-    },
     { "name": "Algae Left in Reef",
       "code": "alr",
       "type": "number",
@@ -206,14 +213,6 @@ var config_data = `
     },
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
-      "type": "bool"
-    },
-    { "name": "Dropped Coral (>2)",
-      "code": "dc",
-      "type": "bool"
-    },
-    { "name": "Dropped Algae (>2)",
-      "code": "da",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
